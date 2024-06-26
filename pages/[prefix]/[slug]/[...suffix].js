@@ -38,7 +38,7 @@ export async function getStaticPaths() {
           params: {
             prefix: row.slug.split('/')[0],
             slug: row.slug.split('/')[1],
-            suffix: row.slug.split('/').slice(1)
+            suffix: row.slug.split('/').slice(2)
           }
         })),
     fallback: true
